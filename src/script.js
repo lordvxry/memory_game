@@ -183,7 +183,7 @@ class PlayGameScene extends Phaser.Scene {
     if (this.numMatches == 8) {
       this.winSound.play();
       this.time.addEvent({
-        delay: 2000,
+        delay: 5000,
         callbackScope: this,
         callback: function () {
           this.scene.start("PlayGameScene");
